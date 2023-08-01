@@ -5,7 +5,10 @@ const person = {
 };
 
 person.talk();
-person.name = 'Bulibuli';
+const fistname = (person.name = 'Bulibuli');
+
+console.log(fistname);
 
 const targetMember = 'name';
-person[targetMember.value] = 'John';
+person[targetMember.valueOf] = 'John';
+console.log(person);
