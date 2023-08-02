@@ -1,4 +1,4 @@
-import { Teacher } from './teacher';
+import Teacher, { promote } from './teacher';
 
 const Teacher1 = new Teacher('Ali', 'walking', 'M.S.C', 'English');
 console.log(Teacher1);

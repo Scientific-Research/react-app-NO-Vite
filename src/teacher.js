@@ -1,6 +1,11 @@
 import { Person } from './person';
 
-export class Teacher extends Person {
+// Default -> import ... from '';
+// Named -> import { ... } from '';
+
+export function promote() {}
+
+export default class Teacher extends Person {
 	constructor(name, doing, degree, Lesson) {
 		super(name, doing);
 		this.degree = degree;
