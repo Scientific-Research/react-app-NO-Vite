@@ -1,5 +1,5 @@
 const person = {
-	name: 'Mosh',
+	name: 'Maximilian',
 	walk() {
 		console.log(this);
 		this.name = 'Ali';
@@ -7,6 +7,9 @@ const person = {
 };
 
 person.walk();
-const walk = person.walk;
-console.log(walk);
-console.log(walk());
+
+// const walk = person.walk.bind(person);
+//const walk = person.walk();
+// walk();
+const walk = person.walk.bind(person);
+walk();
